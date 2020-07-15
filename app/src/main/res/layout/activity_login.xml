@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:textStyle="bold"
+        android:text="Username"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_email" />
+
+    <TextView
+        android:id="@+id/tv_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_below="@+id/et_email"
+        android:text="Password"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@+id/tv_password" />
+
+    <android.support.v7.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:layout_below="@+id/et_password"/>
+
+    <Button
+        android:id="@+id/b_submit"
+        android:layout_width="100dp"
+        android:backgroundTint="#f4f441"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/et_password"
+        android:text="Submit"/>
+
+    <TextView
+        android:id="@+id/tv_newuser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="New User? Complete the sign up form"
+        android:layout_below="@+id/b_submit"/>
+
+    <Button
+        android:id="@+id/b_signup"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#42f4e2"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_newuser"
+        android:text="Sign Up" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/b_signup"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

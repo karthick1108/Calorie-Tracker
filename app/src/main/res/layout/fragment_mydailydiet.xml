@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp">
+
+    <TextView
+        android:id="@+id/tv_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Food Category" />
+    <Spinner
+        android:id="@+id/spinnerfood"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/tv_food"/>
+
+    <TextView
+        android:id="@+id/tv_foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Food Item"
+        android:layout_below="@+id/spinnerfood"/>
+
+    <Spinner
+        android:id="@+id/spinnername"
+        android:layout_width="250dp"
+        android:layout_height="36dp"
+        android:gravity="left|center_vertical"
+        android:layout_below="@+id/tv_foodName"/>
+
+    <TextView
+        android:id="@+id/tv_newfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Enter the Food"
+        android:layout_below="@+id/spinnername"/>
+
+    <EditText
+        android:id="@+id/et_newFoodInfo"
+        android:maxLines="1"
+        android:background="@drawable/et_style"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:hint="Type food name"
+        android:gravity="center"
+        android:layout_below="@+id/tv_newfood" />
+
+    <Button
+        android:id="@+id/b_search"
+        android:layout_width="100dp"
+        android:backgroundTint="#f45041"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/et_newFoodInfo"
+        android:text="Search"/>
+
+    <TextView
+        android:id="@+id/tv_shownewfood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_below="@+id/b_search"/>
+
+    <ImageView
+        android:id="@+id/img_food"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/tv_shownewfood"
+        android:layout_marginTop="0dp" />
+
+
+    <TextView
+    android:id="@+id/tv_showInfo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text=""
+    android:layout_below="@+id/img_food"/>
+
+
+
+    <EditText
+        android:id="@+id/et_addNewFood"
+        android:maxLines="1"
+        android:background="@drawable/et_style"
+        android:layout_height="30dp"
+        android:layout_width="match_parent"
+        android:hint="Add New Food"
+        android:gravity="center"
+        android:layout_below="@+id/tv_showInfo" />
+
+    <Button
+        android:id="@+id/b_addFood"
+        android:layout_width="100dp"
+        android:backgroundTint="#f45041"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/et_addNewFood"
+        android:text="ADD NEW FOOD" />
+
+</RelativeLayout>

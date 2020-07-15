@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    
+    <ImageView
+        android:id="@+id/img_fitness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fitness"/>
+
+    <TextView
+        android:id="@+id/tv_showdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/img_fitness"/>
+
+    <TextView
+        android:id="@+id/tv_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/tv_showdate"/>
+    <TextView
+        android:id="@+id/tv_displaygoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/tv_view"/>
+
+    <EditText
+        android:id="@+id/et_setgoal"
+        android:background="@drawable/et_style"
+        android:layout_height="27dp"
+        android:gravity="center"
+        android:ems="10"
+        android:maxLines="1"
+        android:maxLength="5"
+        android:inputType="number"
+        android:hint="Set your goal"
+        android:layout_width="match_parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/tv_displaygoal" />
+
+    <Button
+        android:id="@+id/b_setgoal"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f2e609"
+        android:layout_width="100dp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/et_setgoal"
+        android:text="SET GOAL" />
+
+</RelativeLayout>

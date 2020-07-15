@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Steps\n"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/et_steps"
+        android:background="@drawable/et_style"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:ems="10"
+        android:hint="Set your goal"
+        android:inputType="number"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_below="@+id/tv_steps" />
+
+    <Button
+        android:id="@+id/b_setSteps"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4485ed"
+        android:layout_width="100dp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/et_steps"
+        android:text="ADD" />
+
+    <Button
+        android:id="@+id/b_delete"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4485ed"
+        android:layout_width="100dp"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/b_setSteps"
+        android:text="DELETE" />
+
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/b_setSteps"/>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_show" />
+
+</RelativeLayout>

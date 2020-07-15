@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_rptheader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Welcome to Report Screen. Select the date to check your report \n"/>
+
+    <DatePicker
+        android:id="@+id/repDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:datePickerMode="calendar"
+        android:layout_below="@+id/tv_rptheader"/>
+
+    <Button
+        android:id="@+id/b_piechart"
+        android:layout_width="100dp"
+        android:backgroundTint="#f44245"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/repDatePicker"
+        android:text="PIE CHART"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+    android:id="@+id/piechart"
+    android:layout_width="300dp"
+    android:layout_height="400dp"
+    android:layout_below="@+id/b_piechart"/>
+
+</RelativeLayout>

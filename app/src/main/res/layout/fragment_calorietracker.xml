@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp">
+
+
+    <TextView
+        android:id="@+id/tv_showgoalsset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="" />
+
+
+    <TextView
+        android:id="@+id/tv_showstepstaken"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_below="@+id/tv_showgoalsset"/>
+
+    <TextView
+        android:id="@+id/tv_consumedcal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_below="@+id/tv_showstepstaken"/>
+
+    <TextView
+        android:id="@+id/tv_burnedcalatrest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_below="@+id/tv_consumedcal"/>
+
+
+    <TextView
+        android:id="@+id/tv_burnedpersteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text=""
+        android:layout_below="@+id/tv_burnedcalatrest"/>
+
+
+</RelativeLayout>
